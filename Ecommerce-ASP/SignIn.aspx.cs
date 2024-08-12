@@ -86,7 +86,7 @@ namespace Ecommerce_ASP
                                 {
                                     Session["getFullName"] = row["Name"].ToString();
                                     Session["LoginType"] = "User";
-                                    Response.Redirect("HomePage.aspx?UserLogin=YES");
+                                    Response.Redirect("Dashboard.aspx?UserLogin=YES");
                                     
                                 }
                                             

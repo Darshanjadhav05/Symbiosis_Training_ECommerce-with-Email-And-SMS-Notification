@@ -8,115 +8,142 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" />
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com"  />
+<link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&family=Finger+Paint&family=Homemade+Apple&family=Lumanosimo&family=Playball&family=Poppins:wght@300;400;600;700;800&family=Silkscreen&family=Tinos&display=swap" rel="stylesheet" />
     <style>
         body {
-    padding-top: 70px; /* Space for fixed navbar */
-    font-family: Arial, sans-serif;
-    background-color: #f5f5f5;
-}
+            padding-top: 70px; 
+             font-family: "Tinos", serif;
+            font-weight: 400;
+            background-color: #f5f5f5;
+        }
 
-.navbar {
-    margin-bottom: 0;
-    border-radius: 0;
-}
+        .navbar {
+          
+            background-color: white;
+            
+        }
 
-.navbar-brand img {
-    height: 30px;
-}
+        
+        .com_name h2{
+              font-family: "Cinzel Decorative", serif;
+  font-weight: 700;
+  font-style: normal;
+        }
 
-.navbar-nav > li > a {
-    padding-top: 15px;
-    padding-bottom: 15px;
-}
+        .navbar-nav > li > a {
+            padding-top: 15px;
+            padding-bottom: 15px;
+            color: #000;
+    font-size: 15px;
+    margin-top: 10px;
+        }
 
-/* Sign Up Page Styling */
-.center-page {
-    max-width: 600px;
-    margin: 0 auto;
-    padding: 30px;
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-}
+        .navbar-nav > li > a:hover {
+            background-color: #1abc9c;
+            color: #fff;
+        }
 
-.form-group {
-    margin-bottom: 20px;
-}
+        .center-page {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 30px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
 
-.form-group label {
-    font-weight: bold;
-    margin-bottom: 5px;
-    color: #333;
-}
+        .form-group {
+            margin-bottom: 20px;
+            height: 48px;
+        }
 
-.form-control {
-    border-radius: 4px;
-    border: 1px solid #ddd;
-    box-shadow: inset 0 1px 2px rgba(0,0,0,0.1);
-}
+        .form-group label {
+            font-weight: bold;
+            margin-bottom: 5px;
+            color: #333;
+        }
 
-.form-control:focus {
-    border-color: #5bc0de;
-    box-shadow: inset 0 1px 2px rgba(0,0,0,0.075), 0 0 8px rgba(91, 192, 222, 0.6);
-}
+        .form-control {
+            border-radius: 4px;
+            border: 1px solid #ddd;
+            box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+        }
 
-.btn-success {
-    background-color: #5cb85c;
-    border-color: #4cae4c;
-    border-radius: 4px;
+        .form-control:focus {
+            border-color: #5bc0de;
+            box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.075), 0 0 8px rgba(91, 192, 222, 0.6);
+        }
+
+        .btn-success {
+    background-color: #000000; 
+    border-color: #000000; 
+    border-radius: 8px; 
     padding: 10px 20px;
+    transition: all 0.3s ease-in-out;
 }
 
 .btn-success:hover {
-    background-color: #4cae4c;
-    border-color: #398439;
+    background-color: #333333;
+    border-color: #333333;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
-
-.text-danger {
-    color: #d9534f;
-}
-
-.text-info {
-    color: #5bc0de;
-}
-
-/* Footer Styling */
-.footer-pos {
-    background-color: #222;
+.navbar-nav > li.active > a {
+    background-color: #1abc9c; 
     color: #fff;
-    padding: 20px 0;
-    position: relative;
-    bottom: 0;
-    width: 100%;
+    border-radius:50px;
 }
+        .text-danger {
+            color: #e74c3c;
+        }
 
-.footer-pos p {
-    margin: 0;
-}
+        .text-info {
+            color: #3498db;
+        }
 
-.footer-pos a {
-    color: #fff;
-    text-decoration: none;
-}
+        .footer-pos {
+            background-color: #34495e;
+            color: #ecf0f1;
+            padding: 20px 0;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+            text-align: center;
+        }
 
-.footer-pos a:hover {
-    text-decoration: underline;
-}
+        .footer-pos p {
+            margin: 0;
+        }
 
-.pull-right {
-    float: right;
-}
+        .footer-pos a {
+            color: #ecf0f1;
+            text-decoration: none;
+        }
 
-@media (max-width: 767px) {
-    .navbar-nav {
-        float: none;
-        margin-top: 7.5px;
-    }
+        .footer-pos a:hover {
+            text-decoration: underline;
+        }
 
-    .navbar-collapse {
-        border-top: 1px solid #ddd;
-    }
-}
+        .pull-right {
+            float: right;
+        }
+
+        @media (max-width: 767px) {
+            .navbar-nav {
+                float: none;
+                margin-top: 7.5px;
+            }
+
+            .navbar-collapse {
+                border-top: 1px solid #ddd;
+            }
+
+            .footer-pos {
+                text-align: center;
+            }
+        }
+        
     </style>
 </head>
 <body>
@@ -131,34 +158,20 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="Default.aspx">
-                        <img src="icons/safeIcons.png" alt="MyEShopping" height="30" />MyEShopping
-                    </a>
+                    
+                        <div class="com_name"><h2>EasyMart</h2></div>
+                   
                 </div>
                 <div class="navbar-collapse collapse">
                     <ul class="nav navbar-nav navbar-right">
-                        <li><a href="Default.aspx">Home</a></li>
+                        <li><a href="HomePage.aspx">Home</a></li>
                         <li><a href="About.aspx">About</a></li>
                         <li><a href="#">Contact US</a></li>
-                        <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Products<b class="caret"></b></a>
-                            <ul class="dropdown-menu">
-                                <li class="dropdown-header">Men</li>
-                                <li role="separator" class="divider"></li>
-                                <li><a href="#">Shirts</a></li>
-                                <li><a href="#">Pants</a></li>
-                                <li><a href="#">Denims</a></li>
-                                <li role="separator" class="divider"></li>
-                                <li class="dropdown-header">Women</li>
-                                <li role="separator" class="divider"></li>
-                                <li><a href="#">Top</a></li>
-                                <li><a href="#">Leggings</a></li>
-                                <li><a href="#">Denims</a></li>
-                            </ul>
-                        </li>
+                        
                         <li class="active"><a href="SignUp.aspx">SignUp</a></li>
                         <li><a href="SignIn.aspx">SignIn</a></li>
                     </ul>
+
                 </div>
             </div>
         </div>
@@ -201,31 +214,32 @@
             <div class="form-group">
                 <label class="col-xs-11">Email:</label>
                 <div class="col-xs-11">
-                    <asp:TextBox ID="txtEmail" runat="server" CssClass="form-control" placeholder="Enter Your Email"></asp:TextBox>
+                    <asp:TextBox ID="txtEmail" runat="server" CssClass="form-control" placeholder="Enter Your Email Address"></asp:TextBox>
                     <asp:RequiredFieldValidator ID="rfvEmail" runat="server" ControlToValidate="txtEmail" ErrorMessage="Email is required." CssClass="text-danger" Display="Dynamic" />
-                    <asp:RegularExpressionValidator ID="revEmail" runat="server" ControlToValidate="txtEmail" ErrorMessage="Invalid Email format." ValidationExpression="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$" CssClass="text-danger" Display="Dynamic" />
+                    <asp:RegularExpressionValidator ID="revEmail" runat="server" ControlToValidate="txtEmail" ValidationExpression="\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*" ErrorMessage="Invalid email format." CssClass="text-danger" Display="Dynamic" />
                 </div>
             </div>
 
             <div class="form-group">
-                <label class="col-xs-11"></label>
+                <label class="col-xs-11">Phone:</label>
                 <div class="col-xs-11">
-                    <asp:Button ID="txtsignup" CssClass="btn btn-success" runat="server" Text="Sign Up" OnClick="txtsignup_Click" />
-                    <asp:Label ID="lblMsg" runat="server" Text="" CssClass="text-info"></asp:Label>
+                    <asp:TextBox ID="txtPhone" runat="server" CssClass="form-control" placeholder="Enter Your Phone Number"></asp:TextBox>
+                    <asp:RequiredFieldValidator ID="rfvPhone" runat="server" ControlToValidate="txtPhone" ErrorMessage="Phone number is required." CssClass="text-danger" Display="Dynamic" />
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="col-xs-11">
+                    <asp:Button ID="btnSubmit" runat="server" CssClass="btn btn-success" Text="Submit" />
+                    <asp:Label ID="lblMsg" runat="server" CssClass="text-info"></asp:Label>
                 </div>
             </div>
         </div>
-        <!-- Signup Page End -->
 
-        <!-- Footer Contents Start Here -->
-        <hr />
-        <footer class="footer-pos">
-            <div class="container">
-                <p class="pull-right"><a href="#">&nbsp; &nbsp; Back to top &nbsp; &nbsp;</a></p>
-                <p class="pull-right"><a href="AdminHome.aspx"> Admin Login  </a></p>
-                <p>&copy;2024 djshop.in &middot; <a href="HomePage.aspx">Home</a>&middot;<a href="#">About</a>&middot;<a href="#">Contact</a>&middot;<a href="#">Products</a></p>
-            </div>
-        </footer>
+        <!-- Footer -->
+        <div class="footer-pos">
+            <p>&copy; 2024 EasyMart. All Rights Reserved.</p>
+        </div>
     </form>
 </body>
 </html>

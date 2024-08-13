@@ -26,6 +26,7 @@ namespace Ecommerce_ASP
                     btnSignUP.Visible = false;
                     btnSignIN.Visible = false;
                     btnlogout.Visible = true;
+                  
                 }
 
             }
@@ -35,9 +36,7 @@ namespace Ecommerce_ASP
                 btnSignUP.Visible = true;
                 btnSignIN.Visible = true;
                 btnlogout.Visible = false;
-                //Response.Redirect("Default.aspx");
-                Response.Write("<script type='text/javascript'>alert('Login plz')</script>");
-
+              
             }
         }
     

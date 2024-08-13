@@ -12,67 +12,92 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-    <script type="text/javascript">
-        $(document).ready(function() {
-            $("#<%= btnCart.ClientID %>").click(function() {
-                window.location.href = "Cart.aspx";
-            });
-        });
-    </script>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&family=Finger+Paint&family=Homemade+Apple&family=Lumanosimo&family=Playball&family=Poppins:wght@300;400;600;700;800&family=Silkscreen&family=Tinos&display=swap" rel="stylesheet" />
+<style>
+          .navbar {
+        
+          background-color: white;
+          
+      }
+
+  
+      .com_name h2{
+            font-family: "Cinzel Decorative", serif;
+font-weight: 700;
+font-style: normal;
+      }
+
+      .navbar-nav > li > a {
+          padding-top: 15px;
+          padding-bottom: 15px;
+          color: #000;
+  font-size: 15px;
+  margin-top: 10px;
+      }
+
+      .navbar-nav > li > a:hover {
+          background-color: #1abc9c;
+          color: #fff;
+      }
+    .navbar-nav > li.active > a {
+        background-color: #1abc9c;
+        color: #fff;
+        border-radius: 50px;
+    }
+</style>
 </head>
 <body>
-    <form id="form1" runat="server">
-         <div class="navbar navbar-default navbar-fixed-top" role="navigation">
-            <div class="container">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span> 
-                        <span class="icon-bar"></span>
-                    </button>
-                    <div >
-                        <a style="display:flex" class="navbar-brand" href="HomePage.aspx">
-                        <asp:Image ID="imgLogo" runat="server" ImageUrl="~/icons/safeIcons.png" AlternateText="MyEShopping" Height="30px" />
-                        DJShop
-                    </a>
-                    </div>
-                </div>
-                <div class="navbar-collapse collapse">
-                    <ul class="nav navbar-nav navbar-right">
-                        <li class="active"><a href="HomePage.aspx">Home</a></li>
-                        <li><a href="About.aspx">About</a></li>
-                        <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Products <b class="caret"></b></a>
-                            <ul class="dropdown-menu">
-                                <li><a href="Products.aspx">All Products</a></li>
-                                <li role="separator" class="divider"></li>
-                                <li class="dropdown-header">Men</li>
-                                <li role="separator" class="divider"></li>
-                                <li><a href="ManShirt.aspx">Shirts</a></li>
-                                <li><a href="ManPants.aspx">Pants</a></li>
-                                <li><a href="ManDenims.aspx">Denims</a></li>
-                                <li role="separator" class="divider"></li>
-                                <li class="dropdown-header">Women</li>
-                                <li role="separator" class="divider"></li>
-                                <li><a href="WomanTop.aspx">Top</a></li>
-                                <li><a href="WomanLegging.aspx">Leggings</a></li>
-                                <li><a href="WomanSarees.aspx">Saree</a></li>
-                            </ul>
-                        </li>
-                        <li>
-                            <asp:Button ID="btnCart" CssClass="btn btn-primary navbar-btn" runat="server" Text="Cart" />
-                            <asp:Label ID="lblCartCount" runat="server" CssClass="badge"></asp:Label>
-                        </li>
+    <form id="form1" runat="server" style="margin-top:81px">
+             <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+     <div class="container">
+         <div class="navbar-header">
+             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                 <span class="sr-only">Toggle navigation</span>
+                 <span class="icon-bar"></span>
+                 <span class="icon-bar"></span>
+                 <span class="icon-bar"></span>
+             </button>
+             
+                 <div class="com_name"><h2>EasyMart</h2></div>
+            
+         </div>
+         <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav navbar-right">
+    <li class="active"><a href="HomePage.aspx">Home</a></li>
+    <li><a href="About.aspx">About</a></li>
+    <li><a href="#">Contact US</a></li>
+        
+                 <li class="dropdown">
+     <a href="#" class="dropdown-toggle" data-toggle="dropdown">Products <b class="caret"></b></a>
+     <ul class="dropdown-menu">
+         <li><a href="Products.aspx">All Products</a></li>
+         <li role="separator" class="divider"></li>
+         <li class="dropdown-header">Men</li>
+         <li role="separator" class="divider"></li>
+         <li><a href="ManShirt.aspx">Shirts</a></li>
+         <li><a href="ManPants.aspx">Pants</a></li>
+         <li><a href="ManDenims.aspx">Denims</a></li>
+         <li role="separator" class="divider"></li>
+         <li class="dropdown-header">Women</li>
+         <li role="separator" class="divider"></li>
+         <li><a href="WomanTop.aspx">Top</a></li>
+         <li><a href="WomanLegging.aspx">Leggings</a></li>
+         <li><a href="WomanSarees.aspx">Saree</a></li>
+     </ul>
+ </li>
+                
                         <li runat="server" id="btnSignUP"><a href="SignUp.aspx">SignUp</a></li>
                         <li runat="server" id="btnSignIN"><a href="SignIn.aspx">SignIn</a></li>
                         <li>
                             <asp:Button ID="btnlogout" CssClass="btn btn-default navbar-btn" runat="server" Text="Sign Out" OnClick="btnlogout_Click" />
                         </li>
                     </ul>
-                </div>
-            </div>
-        </div>
+
+
+         </div>
+     </div>
+ </div>
+                
 
         <!-- Image Slider -->
   <div class="container">
@@ -86,34 +111,31 @@
          <!-- Wrapper for slides -->
          <div class="carousel-inner">
              <div class="item active">
-                 <img src="ImgSlider/1.jpg" alt="Los Angeles" style="width: 100%;">
+                 <img src="ImgSlider/1.jpg" alt="Los Angeles" style="width: 100%;" />
                  <div class="carousel-caption">
-                     <h3>
-                         Women Shopping</h3>
-                     <p>
-                         50% off</p>
+                     
                      <p>
                          <a class="btn btn-lg btn-primary" href="Products.aspx" role="button">Buy Now</a></p>
                  </div>
              </div>
              <div class="item">
-                 <img src="ImgSlider/2.png" alt="Chicago" style="width: 100%;">
-                 <div class="carousel-caption">
-                     <h3>
-                         Acce moble Shopping</h3>
-                     <p>
-                         20% off</p>
-                 </div>
+                 <img src="ImgSlider/2.jpg" alt="Chicago" style="width: 100%;"/>
+                 
              </div>
              <div class="item">
-                 <img src="ImgSlider/3.png" alt="New york" style="width: 100%;">
-                 <div class="carousel-caption">
-                     <h3>
-                         On mobile you can get</h3>
-                     <p>
-                         25% off</p>
-                 </div>
+                 <img src="ImgSlider/3.jpg" alt="New york" style="width: 100%;"/>
+                 
              </div>
+             <div class="item">
+    <img src="ImgSlider/4.jpg" alt="New york" style="width: 100%;"/>
+    
+</div><div class="item">
+    <img src="ImgSlider/5.jpg" alt="New york" style="width: 100%;"/>
+    
+</div><div class="item">
+    <img src="ImgSlider/6.jpg" alt="New york" style="width: 100%;"/>
+    
+</div>
          </div>
          <!-- Left and right controls -->
          <a class="left carousel-control" href="#myCarousel" data-slide="prev"><span class="glyphicon glyphicon-chevron-left">
@@ -152,11 +174,11 @@
                     </p>
                 </div>
             </div>
-
+            </div>
            
         <!-- Footer Start -->
         <footer class="container">
-            <p>&copy; Company 2017-2018</p>
+            <p>&copy; Company 2024</p>
         </footer>
     </form>
     

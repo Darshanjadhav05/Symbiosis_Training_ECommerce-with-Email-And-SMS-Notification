@@ -11,7 +11,7 @@ namespace Ecommerce_ASP
 
         protected void Page_Load(object sender, EventArgs e)
         {
-            // Code to execute on page load, if any
+           
         }
 
         protected void txtsignup_Click(object sender, EventArgs e)

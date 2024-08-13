@@ -31,7 +31,7 @@
                 </div>
                 <div class ="navbar-collapse collapse">
                     <ul class ="nav navbar-nav navbar-right">
-                        <li ><a href ="Default.aspx">Home</a> </li>
+                        <li ><a href ="HomePage.aspx">Home</a> </li>
                          <li ><a href="About.aspx">About</a> </li>
                         <li ><a href ="#">Contact US</a> </li>
                        <%-- <li ><a href ="#">Blog-</a> </li>--%>

@@ -11,7 +11,7 @@ namespace Ecommerce_ASP
 {
 
 
-    public partial class Dashboard
+    public partial class Cart
     {
 
         /// <summary>
@@ -24,13 +24,22 @@ namespace Ecommerce_ASP
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
 
         /// <summary>
-        /// imgLogo control.
+        /// ScriptManager1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Image imgLogo;
+        protected global::System.Web.UI.ScriptManager ScriptManager1;
+
+        /// <summary>
+        /// UpdatePanel1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.UpdatePanel UpdatePanel1;
 
         /// <summary>
         /// btnCart2 control.
@@ -51,57 +60,75 @@ namespace Ecommerce_ASP
         protected global::System.Web.UI.HtmlControls.HtmlGenericControl CartBadge;
 
         /// <summary>
-        /// btnSignUP control.
+        /// h4NoItems control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl btnSignUP;
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl h4NoItems;
 
         /// <summary>
-        /// btnSignIN control.
+        /// divQtyError control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl btnSignIN;
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl divQtyError;
 
         /// <summary>
-        /// btnlogout control.
+        /// RptrCartProducts control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnlogout;
+        protected global::System.Web.UI.WebControls.Repeater RptrCartProducts;
 
         /// <summary>
-        /// Label1 control.
+        /// divAmountSect control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label1;
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl divAmountSect;
 
         /// <summary>
-        /// txtFilterGrid1Record control.
+        /// spanCartTotal control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtFilterGrid1Record;
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl spanCartTotal;
 
         /// <summary>
-        /// rptrProducts control.
+        /// spanDiscount control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Repeater rptrProducts;
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl spanDiscount;
+
+        /// <summary>
+        /// spanTotal control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl spanTotal;
+
+        /// <summary>
+        /// btnBuyNow control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btnBuyNow;
     }
 }

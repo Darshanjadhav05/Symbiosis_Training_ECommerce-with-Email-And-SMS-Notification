@@ -11,7 +11,7 @@ namespace Ecommerce_ASP
 {
 
 
-    public partial class Dashboard
+    public partial class ProductView
     {
 
         /// <summary>
@@ -22,15 +22,6 @@ namespace Ecommerce_ASP
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
-
-        /// <summary>
-        /// imgLogo control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Image imgLogo;
 
         /// <summary>
         /// btnCart2 control.
@@ -51,57 +42,30 @@ namespace Ecommerce_ASP
         protected global::System.Web.UI.HtmlControls.HtmlGenericControl CartBadge;
 
         /// <summary>
-        /// btnSignUP control.
+        /// divSuccess control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl btnSignUP;
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl divSuccess;
 
         /// <summary>
-        /// btnSignIN control.
+        /// rptrImage control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl btnSignIN;
+        protected global::System.Web.UI.WebControls.Repeater rptrImage;
 
         /// <summary>
-        /// btnlogout control.
+        /// rptrProductDetails control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnlogout;
-
-        /// <summary>
-        /// Label1 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label1;
-
-        /// <summary>
-        /// txtFilterGrid1Record control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtFilterGrid1Record;
-
-        /// <summary>
-        /// rptrProducts control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Repeater rptrProducts;
+        protected global::System.Web.UI.WebControls.Repeater rptrProductDetails;
     }
 }

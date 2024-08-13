@@ -16,13 +16,16 @@ namespace Ecommerce_ASP
         {
             if (!IsPostBack)
             {
+                
                 // Retrieve and populate username and password from cookies if they exist
                 if (Request.Cookies["UNAME"] != null && Request.Cookies["UPWD"] != null)
                 {
+
                     txtUsername.Text = Request.Cookies["UNAME"].Value;
                     txtPass.Text = Request.Cookies["UPWD"].Value;
                     CheckBox1.Checked = true;
                 }
+              
             }
         }
 

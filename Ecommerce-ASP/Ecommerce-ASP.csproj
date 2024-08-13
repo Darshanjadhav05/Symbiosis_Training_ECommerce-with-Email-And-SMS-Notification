@@ -142,8 +142,13 @@
     <Content Include="Images\Shoes.jpeg" />
     <Content Include="Images\tshirt.jpeg" />
     <Content Include="ImgSlider\1.jpg" />
+    <Content Include="ImgSlider\2.jpg" />
     <Content Include="ImgSlider\2.png" />
+    <Content Include="ImgSlider\3.jpg" />
     <Content Include="ImgSlider\3.png" />
+    <Content Include="ImgSlider\4.jpg" />
+    <Content Include="ImgSlider\5.jpg" />
+    <Content Include="ImgSlider\6.jpg" />
     <Content Include="ImgSlider\chicago.jpg" />
     <Content Include="ImgSlider\la.jpg" />
     <Content Include="ImgSlider\ny.jpg" />

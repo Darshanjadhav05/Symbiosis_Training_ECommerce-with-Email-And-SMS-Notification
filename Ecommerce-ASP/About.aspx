@@ -8,12 +8,58 @@
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&family=Finger+Paint&family=Homemade+Apple&family=Lumanosimo&family=Playball&family=Poppins:wght@300;400;600;700;800&family=Silkscreen&family=Tinos&display=swap" rel="stylesheet" />
+
   <style>
+      .navbar-nav > li.active > a {
+          background-color: #1abc9c;
+          color: #fff;
+          border-radius: 50px;
+      }
+            .navbar {
+        
+          background-color: white;
+          
+      }
+
+     
+      .com_name h2{
+            font-family: "Cinzel Decorative", serif;
+            font-weight: 700;
+            font-style: normal;
+      }
+
+      .navbar-nav > li > a {
+          padding-top: 15px;
+          padding-bottom: 15px;
+          color: #000;
+          font-size: 15px;
+          margin-top: 10px;
+      }
+
+      .navbar-nav > li > a:hover {
+          background-color: #1abc9c;
+          color: #fff;
+      }
   .jumbotron {
     background-color: #f4511e;
     color: #fff;
     padding: 100px 25px;
   }
+  .btn-success {
+    background-color: #000000;
+    border-color: #000000;
+    border-radius: 8px; 
+    padding: 10px 20px;
+    transition: all 0.3s ease-in-out;
+}
+
+.btn-success:hover {
+    background-color: #333333; 
+    border-color: #333333;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
   .container-fluid {
     padding: 60px 50px;
   }
@@ -35,24 +81,40 @@
     }
   }
   </style>
-    <script language="javascript" type="text/javascript">
-// <![CDATA[
-
-       
-
-// ]]>
-    </script>
+    
 </head>
 <body>
     <form id="form1" runat="server">
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            
+                <div class="com_name"><h2>EasyMart</h2></div>
+           
+        </div>
+        <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="HomePage.aspx">Home</a></li>
+                <li class="active"><a href="About.aspx">About</a></li>
+                <li><a href="#">Contact US</a></li>
+                
+                <li ><a href="SignUp.aspx">SignUp</a></li>
+                <li><a href="SignIn.aspx">SignIn</a></li>
+            </ul>
+
+        </div>
+    </div>
+</div>
           <div class="jumbotron text-center">
   <h1>My Shopping Website</h1> 
   <p></p> 
-  <form class="form-inline">
-    <div class="input-group">
-      
-    </div>
-  </form>
+  
 </div>
 
 <!-- Container (About Section) -->

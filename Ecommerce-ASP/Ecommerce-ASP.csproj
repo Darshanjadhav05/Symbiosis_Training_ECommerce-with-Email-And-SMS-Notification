@@ -68,6 +68,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="About.aspx" />
+    <Content Include="Cart.aspx" />
     <Content Include="css\Custome.css" />
     <Content Include="Dashboard.aspx" />
     <Content Include="ForgotPassword.aspx" />
@@ -147,6 +148,7 @@
     <Content Include="ImgSlider\la.jpg" />
     <Content Include="ImgSlider\ny.jpg" />
     <Content Include="Mobile\iphone11.jpeg" />
+    <Content Include="ProductView.aspx" />
     <Content Include="RecoverPassword.aspx" />
     <Content Include="SignIn.aspx" />
     <Content Include="SignUp.aspx" />
@@ -159,6 +161,13 @@
     </Compile>
     <Compile Include="About.aspx.designer.cs">
       <DependentUpon>About.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Cart.aspx.cs">
+      <DependentUpon>Cart.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Cart.aspx.designer.cs">
+      <DependentUpon>Cart.aspx</DependentUpon>
     </Compile>
     <Compile Include="Dashboard.aspx.cs">
       <DependentUpon>Dashboard.aspx</DependentUpon>
@@ -180,6 +189,13 @@
     </Compile>
     <Compile Include="HomePage.aspx.designer.cs">
       <DependentUpon>HomePage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ProductView.aspx.cs">
+      <DependentUpon>ProductView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ProductView.aspx.designer.cs">
+      <DependentUpon>ProductView.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RecoverPassword.aspx.cs">

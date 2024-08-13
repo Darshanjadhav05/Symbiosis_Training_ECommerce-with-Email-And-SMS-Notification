@@ -5,6 +5,11 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <title></title>
+          <link href="css/Custome.css" rel="stylesheet" />
+ 
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" />
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </head>
 <body>
     <form id="form1" runat="server">
@@ -20,7 +25,7 @@
             <div >
                 <a style="display:flex" class="navbar-brand" href="HomePage.aspx">
                 <asp:Image ID="imgLogo" runat="server" ImageUrl="~/icons/safeIcons.png" AlternateText="MyEShopping" Height="30px" />
-                DJShop
+                DSR Shop
             </a>
             </div>
         </div>
@@ -47,8 +52,9 @@
                     </ul>
                 </li>
                 <li>
-                    <asp:Button ID="btnCart" CssClass="btn btn-primary navbar-btn" runat="server" Text="Cart" />
-                    <asp:Label ID="lblCartCount" runat="server" CssClass="badge"></asp:Label>
+                    <button id="btnCart2" runat="server" class="btn btn-primary navbar-btn pull-right" onserverclick="btnCart2_ServerClick" type="button">
+              Cart <span id="CartBadge" runat="server" class="badge"> 0 </span>
+          </button>
                 </li>
                 <li runat="server" id="btnSignUP"><a href="SignUp.aspx">SignUp</a></li>
                 <li runat="server" id="btnSignIN"><a href="SignIn.aspx">SignIn</a></li>
@@ -107,6 +113,48 @@
             </span><span class="sr-only">Next</span> </a>
     </div>
 </div>
+
+        <div class="row">
+      <div class="col-md-12">
+          
+                    <h3>
+                        <asp:Label ID="Label1" runat="server" Text="Showing All Products"></asp:Label>
+                    </h3>
+                    <hr />
+                    
+      </div>
+    </div>
+
+    <div class="row" style="padding-top:50px">
+
+     <asp:TextBox ID="txtFilterGrid1Record" CssClass="form-control" runat="server" 
+              placeholder="Search Products...." AutoPostBack="true" 
+              ontextchanged="txtFilterGrid1Record_TextChanged" ></asp:TextBox>
+      <br />
+      <hr />
+
+       <asp:repeater ID="rptrProducts" runat="server">
+    <ItemTemplate>
+        <div class="col-sm-3 col-md-3">
+            <a href="ProductView.aspx?PID=<%# Eval("PID") %>" style="text-decoration:none;">
+                <div class="thumbnail">              
+                    <img src="Images/ProductImages/<%# Eval("PID") %>/<%# Eval("ImageName") %><%# Eval("Extention") %>" alt="<%# Eval("ImageName") %>" />
+                    <div class="caption"> 
+                        <div class="proName"><%# Eval("PName") %></div>
+                        <div class="proPrice">
+                            <span class="proOgPrice"><%# Eval("PPrice", "{0:0,00}") %></span>
+                            <%# Eval("PSelPrice", "{0:c}") %>
+                            <span class="proPriceDiscount">(<%# Eval("DiscAmount", "{0:0,00}") %> off)</span>
+                        </div> 
+                    </div>
+                </div>
+            </a>
+        </div>
+    </ItemTemplate>
+</asp:repeater>
+
+
+    </div>
     </form>
 </body>
 </html>
